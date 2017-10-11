@@ -7,19 +7,29 @@ author = "Thorsten Göckeler"
 
 copyright = "Copyright (c) 2006-2017, Thorsten G&ouml;ckeler. All rights reserved."
 
-canonifyurls = true
+# canonifyurls = true
 pluralizeListTitles = false
 paginate = 3
 sectionPagesMenu = "main"
 
 theme = "beautifulhugo"
 
+# Server Code Highlighting
+pygmentsUseClasses = true
+pygmentCodeFences = true
 
 [permalinks]
   post = "/:year/:month/:title/"
 
 [params]
   subtitle = "Thoughts about Bits and Bytes"
+  # logo = "img/avatar-icon.png"
+  # favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = true
+  comments = true
+
 
 [Author]
   name = "Thorsten Göckeler"
