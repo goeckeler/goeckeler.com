@@ -9,7 +9,7 @@ copyright = "Copyright (c) 2006-2017, Thorsten G&ouml;ckeler. All rights reserve
 
 # canonifyurls = true
 pluralizeListTitles = false
-paginate = 3
+paginate = 5
 sectionPagesMenu = "main"
 
 theme = "beautifulhugo"
