@@ -1,0 +1,31 @@
+baseURL = "https://goeckeler.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+
+title = "goeckeler.com"
+author = "Thorsten Göckeler"
+
+copyright = "Copyright (c) 2006-2017, Thorsten G&ouml;ckeler. All rights reserved."
+
+canonifyurls = true
+pluralizeListTitles = false
+paginate = 3
+sectionPagesMenu = "main"
+
+theme = "beautifulhugo"
+
+
+[permalinks]
+  post = "/:year/:month/:title/"
+
+[params]
+  subtitle = "Thoughts about Bits and Bytes"
+
+[Author]
+  name = "Thorsten Göckeler"
+  website = "goeckeler.com"
+  email = "webmaster@goeckeler.com"
+  github = "goeckeler"
+  twitter = "tgoeckeler"
+  linkedin = "thorsten-g%C3%B6ckeler-601a32137"
+  xing = "Thorsten_Goeckeler"
