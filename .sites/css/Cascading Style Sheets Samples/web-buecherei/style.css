@@ -1,0 +1,181 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF url(bilder/hintergrund.jpg) repeat-x;
+color: #493214;
+font: normal 100%/1.3 'trebuchet ms', arial, helvetica, sans-serif;
+}
+
+body {
+padding-bottom: 1em;
+width: 760px;
+}
+
+body > ul#nav-2 { /* nur MOSe */
+display: block;
+}
+
+h1, h3 {
+color: #28B0BF;
+}
+
+h1 {
+font-size: 2em;
+height: 42px;
+font-weight: normal;
+padding: 4px 35px 0;
+}
+
+h1 span {
+color: #FFF;
+font-size: .7em;
+}
+
+h2, h3 {
+font-weight: normal;
+}
+
+h2 {
+clear: left;
+color: #FFF;
+font-size: 3em;
+margin: 25px 35px 0;
+}
+
+h3 {
+font: 1.3em georgia, serif;
+letter-spacing: .1em;
+margin: -3px 0 0 110px;
+text-transform: uppercase;
+}
+
+p {
+line-height: 1.7em;
+margin: 0 110px;
+}
+
+p#anreisser {
+font-weight: bold;
+line-height: 1.3em;
+margin: 1em 110px;
+}
+
+blockquote p {
+background: url(bilder/zitat.gif) no-repeat;
+float: right;
+font: italic 1.3em/1.4 georgia, serif;
+margin: .5em;
+padding-left: .5em;
+text-indent: 35px;
+width: 215px;
+}
+
+ul#nav-1, ul#nav-2 {
+list-style: none;
+}
+
+ul#nav-1, ul#nav-1 li {
+height: 32px;
+}
+
+ul#nav-1 {
+margin: 41px 0 0 10px;
+}
+
+ul#nav-1 li {
+float: left;
+}
+
+ul#nav-1 #startseite, ul#nav-1 #startseite-an {
+background: url(bilder/nav-1-startseite.gif);
+width: 177px;
+}
+
+ul#nav-1 #startseite :focus, ul#nav-1 #startseite :hover, ul#nav-1 #startseite :active, ul#nav-1 #startseite-an {
+background: url(bilder/nav-1-startseite-an.gif);
+}
+
+ul#nav-1 #texte, ul#nav-1 #texte-an {
+background: url(bilder/nav-1-texte.gif);
+width: 101px;
+}
+
+ul#nav-1 #texte.an, ul#nav-1 #texte :focus, ul#nav-1 #texte :hover, ul#nav-1 #texte :active, ul#nav-1 #texte-an {
+background: url(bilder/nav-1-texte-an.gif);
+}
+
+ul#nav-1 #autoren, ul#nav-1 #autoren-an {
+background: url(bilder/nav-1-autoren.gif);
+width: 156px;
+}
+
+ul#nav-1 #autoren :focus, ul#nav-1 #autoren :hover, ul#nav-1 #autoren :active, ul#nav-1 #autoren-an {
+background: url(bilder/nav-1-autoren-an.gif);
+}
+
+ul#nav-1 #teilnehmen, ul#nav-1 #teilnehmen-an {
+background: url(bilder/nav-1-teilnehmen.gif);
+width: 167px;
+}
+
+ul#nav-1 #teilnehmen :focus, ul#nav-1 #teilnehmen :hover, ul#nav-1 #teilnehmen :active, ul#nav-1 #teilnehmen-an {
+background: url(bilder/nav-1-teilnehmen-an.gif);
+}
+
+ul#nav-1 #kontakt, ul#nav-1 #kontakt-an {
+background: url(bilder/nav-1-kontakt.gif);
+width: 149px;
+}
+
+ul#nav-1 #kontakt :focus, ul#nav-1 #kontakt :hover, ul#nav-1 #kontakt :active, ul#nav-1 #kontakt-an {
+background: url(bilder/nav-1-kontakt-an.gif);
+}
+
+ul#nav-1 a, ul#nav-2 li a, ul#nav-2 li span {
+display: block;
+text-decoration: none;
+}
+
+ul#nav-1 a {
+height: 100%;
+text-indent: -999em;
+}
+
+ul#nav-2 {
+background: url(bilder/nav-2-min.png) no-repeat;
+display: none;
+height: 205px;
+padding-top: 5px;
+position: absolute;
+top: 240px;
+width: 223px;
+}
+
+ul#nav-2:hover {
+background: url(bilder/nav-2-max.png);
+}
+
+ul#nav-2:hover li {
+visibility: visible;
+}
+
+ul#nav-2 li {
+visibility: hidden;
+}
+
+ul#nav-2 li a, ul#nav-2 li span {
+color: #FFF;
+line-height: 1.7em;
+padding-left: 54px;
+}
+
+ul#nav-2 li a:hover, ul#nav-2 li a:active {
+color: #28B0BF;
+}
+
+ul#nav-2 li span {
+background: url(bilder/nav-2-pfeil.gif) 44px 9px no-repeat;
+}

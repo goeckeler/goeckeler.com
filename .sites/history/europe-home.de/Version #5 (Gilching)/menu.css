@@ -1,0 +1,84 @@
+<STYLE type="text/css">
+<!--
+ BODY	{  
+  font-family:Verdana,Helvetica,Arial,Geneva;
+  font-size:x-small;
+  font-weight:normal;
+  color:#FFFF00; 
+  background:#004080;
+  background-color:#004080;
+ }
+
+ p,h1,h2,h3,h4,ul,ol,li,div,td,th,address,blockquote,nobr,b,i
+  { font-family : Verdana,Helvetica,Arial,Geneva; }
+
+ td { font-size : x-small; text-align : justify }
+ hr { color : #FFFFFF; }
+ li { color : #E0E0E0; }
+
+ h1 { font-size : small; font-weight : bold; }
+ h2 { font-size : x-small; font-weight : bold; }
+ h3 { font-size : x-small; font-style : italic; }
+ 
+ A:link  {
+  text-decoration : none;
+  color : #FFFFFF;
+ }
+ 
+ A:visited  {
+  text-decoration : none;
+  color : #FFFFFF;
+ }
+ 
+ A:active  {
+  text-decoration : underline;
+  color : #FFFFFF;
+ }
+ 
+ A:hover  {
+  text-decoration : underline;
+  font-weight : bold;
+  color : #FFFFFF;
+ }
+ 
+ div.menu A:visited  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : VERDANA,ARIAL,HELVETICA;
+  font-size : x-small;
+ }
+ 
+ div.menu A:link  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : VERDANA,ARIAL,HELVETICA;
+  font-size : x-small;
+ }
+ 
+ div.menu A:active  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : VERDANA,ARIAL,HELVETICA;
+  font-size : x-small;
+ }
+ 
+ div.menu A:hover  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFFF;
+  font-size : x-small;
+  letter-spacing : 2;
+ }
+ 
+ div.menu em { 
+  font-family : VERDANA,ARIAL,HELVETICA;
+  font-size : x-small; 
+  font-weight : bold;
+  font-style : normal;
+  color : #FFFF00;
+ }
+-->
+</STYLE>

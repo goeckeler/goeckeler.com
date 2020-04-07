@@ -1,0 +1,58 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF;
+font: 80%/1.0 arial, helvetica, sans-serif;
+}
+
+ul {
+background: url(bilder/wolken.jpg);
+color: #FFF;
+font-weight: bold;
+height: 188px;
+list-style: none;
+padding-left: 29px;
+text-transform: uppercase;
+width: 531px;
+}
+
+li {
+float: left;
+height: 137px;
+margin-left: 15px;
+width: 117px;
+}
+
+li a, li.aktiv {
+color: #FFF;
+display: block;
+height: 137px; /* nur IE 5.x */
+height/**/:/**/ 19px;
+padding: 118px 0 0 5px;
+text-decoration: none;
+width: 117px; /* nur IE 5.x */
+width/**/:/**/ 112px;
+}
+
+li a:focus, li a:hover, li a:active, li.aktiv {
+background-image: url(bilder/wolken.jpg);
+}
+
+li.blog {
+margin-left: 0;
+}
+
+li.blog a:focus, li.blog a:hover, li.blog a:active, li.blog.aktiv {
+background-position: 0 -188px;
+}
+
+li.portfolio a:focus, li.portfolio a:hover, li.portfolio a:active, li.portfolio.aktiv {
+background-position: -117px -188px;
+}
+
+li.kontakt a:focus, li.kontakt a:hover, li.kontakt a:active, li.kontakt.aktiv {
+background-position: -234px -188px;
+}

@@ -1,0 +1,24 @@
+BODY {
+	BACKGROUND: #cccccc; COLOR: black; FONT-FAMILY: sans-serif
+}
+A:link {
+	COLOR: #666699
+}
+A:visited {
+	COLOR: #333399
+}
+A:active {
+	COLOR: #660000
+}
+H1 {
+	BACKGROUND: #cccccc; COLOR: #333366; TEXT-ALIGN: center
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 18px; BACKGROUND: #cccccc; COLOR: #663333; TEXT-ALIGN: center
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; BACKGROUND: #cccccc; MARGIN-LEFT: 150px; COLOR: #663333
+}
+P.z {
+	TEXT-ALIGN: center
+}

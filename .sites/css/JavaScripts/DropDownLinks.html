@@ -1,0 +1,42 @@
+<!-- Drop down list box with selectable URLs -->
+
+<!--
+**************************************************************
+This allows you to do drop-down menu navigation. Simply
+replace the links in the 'option select' area.
+
+(C) http://www.wyka-warzecha.com
+Please leave this copyright notice in
+**************************************************************
+//-->
+
+<script language="JavaScript">
+<!-- 
+function goToURL(form)
+  {
+
+    var myindex=form.dropdownmenu.selectedIndex
+    if(!myindex=="")
+      {
+        window.location.href=form.dropdownmenu.options[myindex].value;
+
+        // This is an alternative method you can use
+        // var frameTarget = "_new";
+        // window.open(form.dropdownmenu.options[myindex].value,frameTarget,"");
+      }
+}
+//-->
+</script>
+
+<center>
+<form name="dropDownForm">
+
+  <select name="dropdownmenu" size=1 onChange="goToURL(this.form)">
+    <option selected value="">Drop Down Form Title
+    <option value="http://www.your_main_website.com/your_page_1.htm">Page 1
+    <option value="http://www.your_main_website.com/your_page_2.htm">Page 2
+    <option value="http://www.your_main_website.com/your_page_3.htm">Page 3
+    <option value="http://www.your_main_website.com/your_page_4.htm">Page 4
+    <option value="http://www.your_main_website.com/your_page_5.htm">Page 5
+  </select>
+</form>

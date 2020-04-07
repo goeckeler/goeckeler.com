@@ -1,0 +1,85 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #ACB141;
+color: #FFF;
+font: 70%/1.1 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 3em;
+}
+
+form, span {
+position: absolute;
+}
+
+form {
+margin-top: 2.2em;
+}
+
+form > div { /* nur MOSe */
+overflow: hidden;
+}
+
+label, input, textarea {
+float: left;
+}
+
+label {
+clear: left;
+padding-top: .5em;
+width: 100px;
+}
+
+input, textarea {
+border: 0;
+color: #145A33;
+font: 1em/1.0 verdana, arial, helvetica, sans-serif;
+margin-bottom: 1em;
+padding: 5px 9px 3px;
+}
+
+input {
+background: url(bilder/eingabefeld.gif);
+height: 23px; /* nur IE 5.x */
+height/**/:/**/ 15px;
+width: 230px; /* nur IE 5.x */
+width/**/:/**/ 212px;
+}
+
+textarea {
+background: url(bilder/kommentarfeld.gif);
+height: 228px; /* nur IE 5.x */
+height/**/:/**/ 220px;
+width: 343px; /* nur IE 5.x */
+width/**/:/**/ 325px;
+}
+
+div {
+background: #145A33 url(bilder/ecke.gif) top left no-repeat;
+padding: 1em;
+width: 492px; /* nur IE 5.x */
+width/**/:/**/ 470px;
+}
+
+span {
+color: #FEFFE2;
+font-size: 2.2em;
+line-height: 1em;
+right: 0;
+top: -.9em;
+}
+
+#senden {
+background: url(bilder/bestaetigung.gif) center right no-repeat;
+color: #FFF;
+height: auto;
+margin-left: 100px;
+padding: 5px 0;
+text-decoration: underline;
+width: 343px;
+}

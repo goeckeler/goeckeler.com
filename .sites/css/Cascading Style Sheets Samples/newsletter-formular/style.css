@@ -1,0 +1,102 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF;
+color: #FFF;
+font: bold 90%/1.0 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 3em;
+}
+
+div, form, input, label, span {
+position: absolute;
+}
+
+div {
+left: 201px;
+top: 187px;
+width: 180px;
+}
+
+div * {
+position: static !important;
+}
+
+div #versand-html {
+margin-left: 35px;
+}
+
+form {
+background: url(bilder/hintergrund.gif);
+height: 344px;
+width: 471px;
+}
+
+fieldset {
+border: 0;
+}
+
+legend {
+display: none;
+}
+
+input {
+font: .75em verdana, arial, helvetica, sans-serif;
+padding: 3px 5px;
+}
+
+#name, #e-mail {
+background: #404040;
+border: 1px solid;
+color: #FFF;
+left: 197px;
+width: 170px;
+}
+
+#name {
+top: 80px;
+}
+
+#e-mail {
+top: 131px;
+}
+
+#senden {
+font-weight: bold;
+left: 290px;
+top: 230px;
+}
+
+.index {
+display: block;
+text-indent: -999em;
+}
+
+.name {
+background: url(bilder/name.gif);
+height: 31px;
+left: 101px;
+top: 82px;
+width: 84px;
+}
+
+.e-mail {
+background: url(bilder/e-mail.gif);
+height: 37px;
+left: 89px;
+top: 128px;
+width: 96px;
+}
+
+.versandart {
+background: url(bilder/versandart.gif);
+height: 39px;
+left: 61px;
+top: 187px;
+width: 128px;
+}

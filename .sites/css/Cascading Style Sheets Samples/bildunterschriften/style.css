@@ -1,0 +1,55 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #D5E3FF;
+color: #40444C;
+font: 80%/1.2 georgia, serif;
+}
+
+body {
+padding: 5em;
+}
+
+p {
+margin-bottom: 1em;
+text-indent: 1em;
+}
+
+img {
+background: #FFF;
+border: 1px solid #ACB6CC;
+padding: 2px;
+}
+
+/* Weg 1: Hilfscontainer */
+
+div {
+float: left;
+margin: 0 1em 1em 0;
+text-align: center;
+width: 231px;
+}
+
+/* Weg 2: Definitionsliste */
+
+dl {
+float: right;
+margin: 0 0 1em 1em;
+text-align: center;
+}
+
+/* Weg 3: Ruby-Markup */
+
+ruby {
+float: left;
+margin: 0 1em 1em 0;
+text-align: center;
+width: 231px;
+}
+
+rt {
+font-size: 1em;
+}

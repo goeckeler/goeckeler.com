@@ -1,0 +1,68 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #329199;
+color: #FFF;
+font: normal 70%/1.1 verdana, arial, helvetica, sans-serif;
+}
+
+h1, h2 {
+font-family: georgia, serif;
+font-weight: normal;
+}
+
+h1 {
+background: url(bilder/kopf.jpg);
+border-bottom: 3px solid;
+font-size: 4em;
+height: 130px; /* nur IE 5.x */
+height/**/:/**/ 40px;
+line-height: .9em;
+padding: 90px 0 0;
+text-indent: .1em;
+text-transform: uppercase;
+width: 750px;
+}
+
+h2 {
+font-size: 2.2em;
+}
+
+p {
+margin: .7em 0;
+}
+
+div#haupt {
+background: url(bilder/hintergrund.gif) top right repeat-y;
+border-bottom: 3px solid;
+overflow: hidden;
+width: 750px;
+}
+
+div#haupt div {
+float: left;
+padding: 10px;
+}
+
+div#inhalt {
+width: 548px; /* nur IE 5.x */
+width/**/:/**/ 528px;
+}
+
+div#kommentare {
+width: 202px; /* nur IE 5.x */
+width/**/:/**/ 182px;
+}
+
+div#info {
+background: url(bilder/pfeil.gif) no-repeat;
+margin: 1.3em 0;
+padding: .35em 2.5em !important;
+}
+
+a {
+color: #FFF;
+}

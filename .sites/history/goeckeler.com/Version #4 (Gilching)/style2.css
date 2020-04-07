@@ -1,0 +1,55 @@
+@import url(style.css);
+
+#contents {
+	margin : 0px 50px 50px 220px;
+  padding : 5px;
+}
+
+#side-bar {
+  font-size : 10pt;
+  /* background : #FF9933; */
+	position : absolute;
+	top : 70px;
+	left : 10px;
+	width : 220px;
+	border : 1px dashed;
+	/* line-height : 17px; */
+/* trick IE */
+	voice-family : "\"}\"";
+	voice-family : inherit;
+	width : 210px;
+	/* position:fixed; */
+}
+
+/* re-hack for Opera */
+body>#side-bar {
+  width : 210px;
+}
+
+#side-bar * {
+  font-size : 8pt;
+  font-weight : normal;
+  padding : 5px;
+  text-decoration : none;
+  line-height : 100%;
+  margin : 0px 0px 0px 0px;
+}
+
+#side-bar A {
+  text-decoration : none;
+  color : black;
+}
+
+#side-bar A:hover  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #000099;
+}
+
+#side-bar h2 {
+  text-indent : 10px;
+} 
+
+#side-bar h3 {
+  text-indent : 20px;
+}

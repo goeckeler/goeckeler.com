@@ -1,0 +1,88 @@
+<STYLE type="text/css">
+<!--
+ hr { color : #FFFFFF; }
+
+ p,h1,h2,h3,h4,ul,ol,li,div,td,th,address,blockquote,nobr,b,i
+  { font-family : Tahoma,Verdana,Helvetica,Arial,Geneva; }
+
+ BODY	{  
+  font-family : Tahoma,Verdana,Helvetica,Arial,Geneva;
+  font-size : 10pt;
+  font-weight : normal;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  color : #FFFF00; 
+  background : #004080;
+  background-color : #003366;
+ }
+
+ td { font-size : 10pt; text-align : justify; }
+ li { color : #E0E0E0; }
+ b  { color : #FFFF80; }
+ h1 { font-size : 12pt; font-weight : bold; }
+ h2 { font-size : 10pt; font-weight : bold; }
+ h3 { font-size : 10pt; font-style : italic; }
+ 
+ A:link  {
+  text-decoration : none;
+  color : #FFFFFF;
+ }
+ 
+ A:visited  {
+  text-decoration : none;
+  color : #FFFFFF;
+ }
+ 
+ A:active  {
+  text-decoration : underline;
+  color : #FFFFFF;
+ }
+ 
+ A:hover  {
+  text-decoration : underline;
+  font-weight : bold;
+  color : #FFFFFF;
+ }
+
+ div.menu A:visited  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : Verdana,Helvetica,Arial,Geneva;
+  font-size : 10pt;
+ }
+ 
+ div.menu A:link  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : Verdana,Helvetica,Arial,Geneva;
+  font-size : 10pt;
+ }
+ 
+ div.menu A:active  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFCC;
+  font-family : Verdana,Helvetica,Arial,Geneva;
+  font-size : 10pt;
+ }
+ 
+ div.menu A:hover  {
+  text-decoration : none;
+  font-weight : bold;
+  color : #FFFFFF;
+  font-size : 10pt;
+  letter-spacing : 2;
+ }
+ 
+ div.menu em { 
+  font-family : Verdana,Helvetica,Arial,Geneva;
+  font-size : 10pt; 
+  font-weight : bold;
+  font-style : normal;
+  color : #FFFF00;
+ }
+-->
+</STYLE>

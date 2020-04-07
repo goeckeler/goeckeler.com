@@ -1,0 +1,58 @@
+* {
+letter-spacing: 1px;
+margin: 0;
+padding: 0;
+}
+
+body {
+padding: 3em;
+}
+
+html {
+background: url(bilder/hintergrund-1.jpg);
+color: #9B1900;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+fieldset {
+background: url(bilder/hintergrund-2.png);
+border: 1px solid #9B1900;
+padding: 10px;
+width: 308px;
+}
+
+fieldset > legend { /* nur MOSe */
+display: block;
+}
+
+legend {
+background: #9B1900;
+color: #FFF;
+display: none;
+font-weight: bold;
+padding: 3px 6px;
+}
+
+label {
+display: block;
+margin-top: 10px;
+}
+
+input {
+color: #000;
+font: 1em verdana, arial, helvetica, sans-serif;
+margin: 2px 0;
+padding: 2px;
+width: 300px;
+}
+
+input:focus {
+background: #FFDBE6;
+}
+
+input#registrieren {
+display: block;
+margin-top: 10px;
+padding: 1px 3px;
+width: auto;
+}

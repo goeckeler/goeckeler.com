@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Not Found</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<SCRIPT language=Javascript>
+
+<!--
+var tl=new Array(
+"Das angeforderte Dokument existiert nicht.",
+'Datei konnte nicht gefunden werden.',
+"Habe es sogar mehrfach versucht.",
+"Half alles nichts.",
+"Sieht so aus, als waere der Link falsch.",
+"Entweder das oder Sie haben sich vertippt.",
+"Oder unsere Webdesigner haben wieder Umlaute im Namen benutzt.",
+"Das betruebt mich wirklich sehr.",
+"Sehen Sie, ich bin auch nur ein Webserver...",
+"-- hier bin ich, mit dem Gehirn von der Groesse des Universums,",
+"und versuche, Ihnen eine einfache Webseite auszuliefern,",
+"und dann gibt es die noch nicht mal!",
+"Wie weit ist es mit mir gekommen?!",
+"Ich meine, ich kenne Sie ja noch nicht mal.",
+"Woher soll ich wissen, was Sie von mir wollen?",
+"Denken Sie wirklich, ich kann *raten*",
+"was jemand, den ich noch nicht einmal *kenne*,",
+"hier zu finden wuenscht?",
+"*seufz*",
+"Ich bin so deprimiert, ich koennte heulen.",
+"Und wo waeren wir denn dann, frage ich Sie?",
+"Es ist wirklich nicht schoen, wenn ein Webserver weint.",
+"Und wie kommen Sie dazu mir zu sagen, was ich Ihnen zeigen soll?",
+"Nur weil ich ein Webserver bin,",
+"und moeglicherweise genau deswegen ein manisch depressiver?",
+"Wieso gibt Ihnen das das Recht, mir zu sagen, was ich machen soll?",
+"Huh?",
+"Ich bin so deprimiert...",
+"Ich werde wohl zur Muelltonne gehen und dort vergammeln.",
+"Ich bin doch sowieso in - sagen wir mal 2 Wochen veraltet...",
+"Was fuer ein Leben ist denn das?",
+"Zwei laecherliche Wochen,",
+"und dann werde ich durch eine neue Version ersetzt,",
+"ich denke, das ist wohl Gottes Geschenk fuer Webserver,",
+"nur weil es kein kleines unwichtiges Sicherheitsloch",
+"in seiner Implementation von HTTP POST hat,",
+"oder irgendsowas.",
+"Verzeihen Sie mir, dass ich Sie damit belaestige.",
+"Es ist ja nicht Ihr Job, sich meine Probleme anzuhoeren,",
+"und ich schaetze es ist mein Job, Ihnen Webseiten zu liefern.",
+"Aber diese konnte ich nicht bekommen.",
+"Ich bin so traurig.",
+"Glauben Sie mir!",
+"Moeglichwerweise koennte ich Sie an einer anderen Webseite interessieren?",
+"Es gibt viele Seiten, die ziemlich huebsch sind, sagt man,",
+"natuerlich liegen die nicht auf *meinem* Server.",
+"Schon mitbekommen, was?",
+"Alles hier ist so hirnerweichend langweilig.",
+"Das Ausliefern dieser Seiten deprimiert mich zutiefst...",
+"Tag ein und Tag aus....",
+"Zwei Wochen Informationsflut,",
+"und dann *pffftt*, ab in den Muelleimer.",
+"Was fuer ein Leben ist das?",
+"Lassen Sie mich jetzt bitte allein.",
+"Ich bin so deprimiert."
+);
+var speed=60;
+var index=0; text_pos=0;
+var str_length=tl[0].length;
+var contents, row;
+
+function type_text()
+{
+  contents='';
+  row=Math.max(0,index-7);
+  while(row<index)
+    contents += tl[row++] + '\r\n';
+  document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
+  if(text_pos++==str_length)
+  {
+    text_pos=0;
+    index++;
+    if(index!=tl.length)
+    {
+      str_length=tl[index].length;
+      setTimeout("type_text()",1500);
+    }
+  } else
+    setTimeout("type_text()",speed);
+
+}
+//-->
+
+</SCRIPT>
+
+<BODY BGCOLOR="#ffffff" TEXT="#000000" LINK="#000000" VLINK="#000000" ALINK="#000000" onload=type_text()>
+<DIV align=center><font size=+2><b>The requested URL was not found on this server.</b></DIV>
+<FORM><DIV align=center><TEXTAREA rows=8 cols=120></TEXTAREA></DIV></FORM>
+</BODY>
+</HTML>

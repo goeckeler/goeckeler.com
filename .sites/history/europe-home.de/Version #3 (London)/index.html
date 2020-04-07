@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>europe-home.de</title>
+<meta name="author" content="Thorsten G&ouml;ckeler">
+<font face="Verdana,Helvetica,Arial,Geneva">
+<h1><center><img src="images/europe-home.de.gif" width="483" height="58" border="0" alt="europe-home.de"></center></h1>
+</font>
+<script language="JavaScript">
+<!--
+var preload = false;
+about       = new Image();
+about.src   = "images/about.gif";
+abouton     = new Image();
+abouton.src = "images/about-select.gif";
+
+direction       = new Image();
+direction.src   = "images/direction.gif";
+directionon     = new Image();
+directionon.src = "images/direction-select.gif";
+
+contact       = new Image();
+contact.src   = "images/contact.gif";
+contacton     = new Image();
+contacton.src = "images/contact-select.gif";
+
+function imageon(name) { document[name].src = eval(name + "on.src"); }
+function imageoff(name) { document[name].src = eval(name + ".src"); }
+
+preload = true;
+
+function on(name) { if (preload) imageon(name); }
+function off(name) { if (preload) imageoff(name); }
+
+// Array of day names
+var dayNames = new Array("Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag");
+
+var monthNames = new Array("Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember");
+
+var dt = new Date();
+var y  = dt.getYear();
+
+// Jahr 2000 fähig
+if (y < 1000) y +=1900;
+
+// document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
+// -->
+</script>
+</head>
+
+<body text="#FFFFFF" bgcolor="#004080" link="#FFFFFF" vlink="#CCFFFF" alink="#FF0000" >
+<font face="Verdana,Helvetica,Arial,Geneva">
+<hr noshade color="#FFFF00" size="1">
+<table> <tr>
+ <td><img src="images/pixel.gif" width="1" height="50" border="0" alt=""></td>
+ <td>
+   <a href="about.html" onmouseover="on('about');" onmouseout="off('about')">
+   <img src="images/about.gif" border="0" name="about" alt="Wir &uuml;ber uns ..."></a>
+ </td>
+</tr></table>
+<div align="center"><table><tr>
+ <td><img src="images/pixel.gif" width="80" height="50" border="0" alt=""></td>
+ <td><a href="direction.html" onmouseover="on('direction');" onmouseout="off('direction')">
+   <img src="images/direction.gif" border="0" name="direction" alt="Anfahrt"></a>
+</td>
+</tr></table></div>
+<div align="right"><table><tr>
+ <td><img src="images/pixel.gif" width="1" height="50" border="0" alt=""></td>
+ <td><a href="contact.html" onmouseover="on('contact');" onmouseout="off('contact')">
+   <img src="images/contact.gif" border="0" name="contact" alt="Kontakt"></a></td>
+</tr></table></div>
+<hr noshade color="#FFFF00" size="1">
+<table > <tr>
+ <td><img src="images/pixel.gif" width="1" height="10" border="0" alt=""></td>
+</tr></table>
+<center>
+<script language="JavaScript">
+<!--
+document.write(dayNames[dt.getDay()] + ", den " + dt.getDate() + ". " + monthNames[dt.getMonth()] + "  " + y);
+// -->
+</script>
+</center>
+</font>
+</body>
+</html>

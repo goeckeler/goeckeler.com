@@ -1,0 +1,254 @@
+
+/* --------------------- DIV ------------------ */
+
+DIV.betont { font-family: monospace;
+           margin-left: 200px; 
+           margin-right: 200px;
+           text-align: left; }
+
+DIV.sehrbetont { font-family: monospace;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+          border-style: ridge;
+             margin-left: 200px; 
+             margin-right: 200px;
+             text-align: left; }
+
+/* --------------------- P ------------------ */
+
+p.betont { font-family: monospace;
+           margin-left: 200px; 
+           margin-right: 200px;
+           text-align: left; }
+
+P	{ font-family: monospace;
+	  text-align: left }
+
+P.z	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-align: center }
+
+P.pos	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-indent: 2em }
+
+P.neg	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-indent: -2em }
+
+P.b	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-align: justify }
+
+P.l	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-align: left }
+
+P.r	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          text-align: right }
+
+P.titel	{ margin-left: 250px }
+
+P.nocss	{ text-align: right;
+	  background: #ffffff; color: white }
+
+
+/* --------------------- OL ------------------ */
+
+OL	{ margin-left: 50px; }
+
+OL OL	{ margin-left: 10px; }
+
+OL LI	{ list-style: upper-roman; }
+
+OL OL LI	{ list-style: lower-roman; }
+
+OL OL OL LI	{ list-style: upper-alpha; }
+
+OL OL OL OL LI	{ list-style: lower-alpha; }
+
+/* --------------------- UL ------------------ */
+
+UL	{ margin-left: 50px; }
+
+UL UL	{ margin-left: 10px; }
+
+
+UL LI	{ list-style: square; }
+
+UL UL LI { list-style: disc; }
+
+UL UL UL LI { list-style: decimal; }
+
+UL UL UL UL LI { list-style: circle; }
+
+UL UL UL UL UL LI { list-style: lower-roman; }
+
+/* --------------------- Betonung ----------------- */
+
+.betont	{ color: #ffffff;
+	  background: #990000 }
+
+.caps	{ color: #ffffff; font-variant: small-caps; }
+
+/* --------------------- SPAN ----------------- */
+
+SPAN.wow	{ color: #ff0000;
+	  background: #ccccff }
+
+/* --------------------- STRONG -------------- */
+
+STRONG	{ background: #ffffff; color: #3333cc }
+
+/* --------------------- EM -------------- */
+
+EM	{ background: #ffffff; color: #3333cc }
+
+/* -------- Textmodifikationen  -------------- */
+
+.lbreit	{ letter-spacing: 0.5em; }
+
+.wbreit	{ word-spacing: 1.5em; }
+
+.klein	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          font-size: small;
+	  text-align: left }
+
+.sehrklein	{ font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          font-size: x-small;
+	  text-align: left }
+
+.gesperrt { letter-spacing: 0.25em;
+	    background: #ffffff; color: #3333cc }
+
+.up	{ text-transform: uppercase }
+
+.low	{ text-transform: lowercase }
+
+.cap	{ text-transform: capitalize }
+
+.norm	{ text-transform: none }
+
+SPAN.acronym { text-transform: lowercase;
+	   font-variant: small-caps }
+
+/* -------- Hinterlegung, Kästen  -------------- */
+
+P.rot0	{ padding: .1em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  text-align: justify; 
+	  background: #666666;
+	  border-width: .1em; 
+	  color: #ffffff;  }
+	  
+P.rot	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: solid; }
+
+P.rot2	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: dashed; }
+
+P.rot3	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: dotted; }
+
+P.rot4	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: double; }
+
+P.rot5	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: groove; }
+
+P.rot6	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: outset; }
+
+P.rot7	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: inset; }
+
+P.rot8	{ padding: .5em; 
+             margin-left: 200px; 
+             margin-right: 200px;
+	  border-width: 1em; 
+	  background: #666666;
+	  color: #ffffff; 
+	  border-color: #333366;
+	  border-style: ridge; }
+
+P.initial { font-family: monospace;
+          margin-left: 200px; 
+          margin-right: 200px;
+          text-align: left;
+          background: #666666;
+	  color: #ffffff;  }
+
+P.initial:first-letter { color: #9999ff; font-size: 150%; }
+
+P.initial:first-line { font-variant: small-caps; }
+
+P.initial2:first-line { font-variant: small-caps; 
+           text-shadow: }
+
+
+
+

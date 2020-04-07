@@ -1,0 +1,387 @@
+Date countdown: n Tage bis zum ...
+
+<!--Plaziere dieses Skript irgendwo auf deiner Seite.-->
+
+<SCRIPT LANGUAGE = "JavaScript">
+var now = new Date();
+// setze diesen Wert auf das Enddatum.
+var then = new Date("Januar 01, 2001");
+var gap = then.getTime() - now.getTime();
+gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+document.write(gap);
+</SCRIPT>
+<!--Deine Nachricht hier-->Tage bis zum Jahr 2001
+
+Aktuelles Datum
+
+<!--Plaziere dieses Skript irgendwo auf deiner Seite-->
+<!--Hinweis: Dieses Skript darf nicht geändert werden-->
+
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+
+// Array of day names
+var dayNames = new Array("Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag");
+
+var monthNames = new Array("Januar","Februar","März","April","Mai","Juni","July","August",
+						   "September","Oktober","November","Dezember");
+
+var dt = new Date();
+var y  = dt.getYear();
+
+// Jahr 2000 fähig
+if (y < 1000) y +=1900;
+
+document.write(dayNames[dt.getDay()] + ", " + monthNames[dt.getMonth()] + " " + dt.getDate() + ", " + y);
+// -->
+</SCRIPT>
+
+Mouse rollover
+
+<!--Platziere dieses Skript in der Head Sektion.-->
+<script language="JavaScript">
+var n3 = false;
+image1       = new Image();
+// Die Adresse der ersten Grafik gehört
+// zwischen die Anführungszeichen unten.
+image1.src   = "/doc/tool_center/script_library/mouse_off1.gif";
+image1on     = new Image();
+// Die Adresse der zweiten Grafik gehört
+// zwischen die Anführungszeichen unten.
+image1on.src = "/doc/tool_center/script_library/mouse_on1.gif"
+image2       = new Image();
+// Place your first image within the
+// quotation marks on the line below.
+image2.src   = "/doc/tool_center/script_library/mouse_off2.gif";
+image2on     = new Image();
+// Place your second image within the
+// quotation marks on the line below.
+image2on.src = "/doc/tool_center/script_library/mouse_on2.gif"
+function on3(name)
+{
+    document[name].src = eval(name + "on.src");
+}
+function off3(name)
+{
+    document[name].src = eval(name + ".src");
+}
+n3 = true;
+function on(name)
+{
+   if (n3)
+      on3(name);
+}
+function off(name)
+{
+   if (n3)
+      off3(name);
+}
+</script>
+<!--Dieses Skript gehört in die BODY Sektion.-->
+<!-- Gib deine URL zwischen den Anführungszeichen unten ein. -->
+<a href="http://www.tripod.de" onmouseover="on('image1');" onmouseout="off('image1')">
+<!--Der Bildname unten soll mit dem ersten Bild der <HEAD> Sektion übereinstimmen.-->
+<img src="/doc/tool_center/script_library/mouse_off1.gif" border="0" name="image1"></a>
+<br><br>
+<!--Gib deine URL zwischen den Anführungszeichen unten ein.-->
+<a href="http://www.tripod.de" onmouseover="on('image2');" onmouseout="off('image2')">
+<!--Der Bildname unten soll mit dem ersten Bild der <HEAD> Sektion übereinstimmen.-->
+<img src="/doc/tool_center/script_library/mouse_off2.gif" border="0" name="image2"></a>
+
+Regenbogentext
+
+<!--Füge dieses Skript in die Head section ein.-->
+<!--In diesem Teil darf nichts verändert werden.-->
+<!--Bitte scrolle nach unten bis zur BODY section.-->
+<script language="JavaScript">
+<!--
+function createHexArray(n)
+{
+   this.length=n;
+   for (var i=1; i<=n; i++)
+      this[i]=i-1;
+  this[11]="A";
+  this[12]="B";
+  this[13]="C";
+  this[14]="D";
+  this[15]="E";
+  this[16]="F";
+   return this;
+}
+hx = new createHexArray(16);
+function convertToHex(x)
+{
+   var high=x/16;
+   var s=high+"";
+   s=s.substring(0,2);
+   high=parseInt(s,10);
+   var left=hx[high+1];
+   var low=x-high*16;
+   s=low+"";
+   s=s.substring(0,2);
+   low=parseInt(s,10);
+   var right=hx[low+1];
+   var string=left+""+right;
+   return string;
+}
+function makeRainbow(text)
+{
+   text=text.substring(3,text.length-4);
+   color_d1=255;
+   mul=color_d1/text.length;
+   for(i=0;i < text.length;i++)
+   {
+      color_d1=255*Math.sin(i/(text.length/3)); "255*Math.sin(i/(text.length/3))"
+      color_h1=convertToHex(color_d1);
+      color_d2=mul*i;
+      color_h2=convertToHex(color_d2);
+      document.write("<FONT COLOR=\"#FF"+color_h1+color_h2+"\">"+text.substring(i,i+1)+"</FONT>");
+   }
+}
+//-->
+</SCRIPT>
+<!--Füge dieses Skript in die BODY section ein.-->
+<!--Du kannst hier die Font Tags verändern.-->
+<font face="verdana, helvetica, arial" size="2"></b>
+<SCRIPT><!--
+// Du kannst die Nachricht unten ändern.
+   {makeRainbow("<< Füge hier deine Nachricht ein und beeindrucke deine Besucher!!  >>");} //-->
+</SCRIPT>
+
+Lauftext in einer Textbox
+
+<!--Füge dieses Skript in die HEAD section ein.-->
+<script language="JavaScript">
+<!--
+// Du kannst die Nachricht zwischen
+// den Anführungszeichen verändern.
+var msg = "gib deine Nachricht hier ein - sie scrollt solange es deine Seite gibt  ..... ";
+function startScroller()
+{
+document.scrollForm.scrolling_message.value = msg;
+msg = msg.substring(1, msg.length) + msg.substring(0, 1);
+// Das ist die Zeiteinstellung für die 
+// Geschwindigeit der einzelnen Buchstaben.
+// (Bsp. 150=.15 sekunden).
+	setTimeout("startScroller()", 150);
+}
+//-->
+</SCRIPT>
+<!--Füge dieses Skript in die BODY section ein.-->
+<form name="scrollForm">
+<!--Dieser Wert ist die Größe des Textfeldes. -->
+<input type="text" name="scrolling_message" value="" size="25">
+</form>
+<!--Ersezte das BODY Tag durch das Folgende-->
+<body onLoad="startScroller();">
+
+Hintergrundfarbe einblenden
+
+<!--Füge das folgende Skript irgendwo zwischen den Body Tags ein.--> 
+<script language="javascript">
+<!--
+function makearray(n)
+{
+     this.length = n;
+     for(var i = 1; i <= n; i++) this[i] = 0;
+     return this;
+}
+hexArray = new makearray(16);
+for(var i = 0; i < 10; i++) hexArray[i] = i;
+hexArray[10]="A"; hexArray[11]="B"; hexArray[12]="C";
+hexArray[13]="D"; hexArray[14]="E"; hexArray[15]="F";
+function makeHex(i)
+{
+    if (i < 0) return "00";
+    else if (i > 255) return "FF";
+    else
+    return "" + hexArray[Math.floor(i/16)] + hexArray[i%16];
+}
+function setbgColor(r, g, b)
+{
+    var red = makeHex(r); var green = makeHex(g); var blue = makeHex(b);
+    document.bgColor = "#"+red+green+blue;
+}
+function fade(sr, sg, sb, er, eg, eb, inc)
+{
+// die Hintergrund Farbe wird aktualisiert
+    for(var i = 0; i <= inc; i++)
+    {
+        setbgColor(
+             Math.floor(sr * ((inc-i)/inc) + er * (i/inc)),
+             Math.floor(sg * ((inc-i)/inc) + eg * (i/inc)),
+             Math.floor(sb * ((inc-i)/inc) + eb * (i/inc)));
+    }
+}
+// Die ersten sechs Zahlen sind RGB Werte und
+// können geändert werden. (Bsp. 255,255,255=weiss,
+// 0,0,0=schwarz). Der siebte Wert legt die Dauer des 
+// Fadings fest, und kann auch geändert werden. (Bsp.
+// 1000=1 Sekunde).
+fade(0,0,0, 255,255,255, 500);
+// -->
+</script>
+
+Browser-Erkennung
+
+<!-- Plaziere dieses Skript irgendwo auf deiner HTML Seite. -->
+<SCRIPT LANGUAGE = "JavaScript">
+var name = navigator.appName;
+var vers = navigator.appVersion;
+vers = vers.substring(0,1); 
+// oder 0,4  könnte 4.5 anstelle von nur 4 ausgeben
+if (name == "Microsoft Internet Explorer")
+{
+// Du kannst diese Nachricht bearbeiten.
+  document.write('Sie benutzen den Internet Explorer.');
+// Wenn du deine Besucher auf eine Internet Explorer
+// optimierte Seite weiterleiten willst 
+// benutze diesen Code:
+// window.location=browser_specific_url;
+}
+else
+{
+// Du kannst diese Nachricht bearbeiten.
+  document.write('Sie benutzen Netscape.');
+// Wenn du deine Besucher auf eine Internet Explorer
+// optimierte Seite weiterleiten willst 
+// benutze diesen Code:
+// window.location=browser_specific_url;
+}
+</SCRIPT>
+
+Navigation per Pull-Down
+
+<!--Plaziere dieses Skript in der Head Sektion.-->
+<SCRIPT LANGUAGE = "JavaScript">
+function changePage()
+{
+   var f = document.forms.navigation;
+   var uri = f.pages.options[f.pages.selectedIndex].value;
+   newPage =
+// Diese Einstellungen beschreiben das pop-up Fenster
+// Du kannst Sie umstellen.
+window.open(uri,"NewPage","height=480,width=640,location=no,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,status=yes");
+   }
+</SCRIPT>
+<!--Füge das Skript irgendwo auf Deiner Seite ein und führe die nötigen Änderungen durch.-->
+<form name="navigation">
+  <select name="pages" size="1" onChange="changePage();">
+<!--For each line of code, you need to do the following:-->
+<!--Place your URLs within the quotation marks.-->
+<!--Edit the text at the end of each line.-->
+    <option value="http://www.lycos.de">lycos
+    <option value="http://www.comundo.de">comundo
+	<option value="http://www.fireball.de">fireball
+  </select>
+</form>
+
+Graphik einblenden bei Likns (Navigationshilfe)
+
+
+<!--Füge dieses Skript zwischen die Head Tags ein.-->
+
+<script language="JavaScript">
+<!--
+
+<!--Du kannst hier zwei eigene Bilder verwenden, oder unsrere.-->
+img_on  = "//local/img/build/scriptlib/on.gif";
+img_off = "//local/img/build/scriptlib/off.gif";
+
+function imgover(imgname)
+{
+   imgname.src = img_on;
+}
+
+function imgout(imgname)
+{
+   imgname.src = img_off;
+}
+//-->
+</script>
+<!--Platziere diesen Code irgendwo nach dem <BODY> tag.-->
+<!--Für jede Zeile des Codes musst du folgendes tun:-->
+<!--Im SRC tag musst du den Namen deiner Pointer Grafik zwischen in die Anführungszeichen einfügen.-->
+<!--Im A HREF tag, musst du den Namen deiner Pointer Grafik zwischen in die Anführungszeichen einfügen.-->
+<p>
+<IMG NAME="img_01" SRC="//local/img/build/scriptlib/off.gif" WIDTH="10" HEIGHT="10" BORDER="0">
+<A HREF="http://www.lycos.de/" onMouseOver="imgover(img_01)" onMouseOut="imgout(img_01)">
+Lycos</a>
+<br>
+<IMG NAME="img_02" SRC="//local/img/build/scriptlib/off.gif" WIDTH="10" HEIGHT="10" BORDER="0">
+<A HREF="http://www.comundo.de/" onMouseOver="imgover(img_02)" onMouseOut="imgout(img_02)">
+Comundo</a>
+<br>
+<IMG NAME="img_03" SRC="//local/img/build/scriptlib/off.gif" WIDTH="10" HEIGHT="10" BORDER="0">
+<A HREF="http://www.fireball.de/" onMouseOver="imgover(img_03)" onMouseOut="imgout(img_03)">
+Fireball</a>
+<br>
+
+Dia-show gallery in one frame
+
+<!--Plaziere diese Skript irgendwo zwischen den BODY Tags -->
+<form>
+<center>
+<script language="JavaScript">
+<!--
+
+var current = 0;
+
+function imageArray()
+{
+  this.length = imageArray.arguments.length;
+  for (var i = 0; i < this.length; i++)
+  {
+     this[i] = imageArray.arguments[i];
+  }
+}
+// Alle Bilder müssen DIE GLEICHE GRÖSSE HABEN,
+// da die Maße des ersten Bildes für alle folgenden
+// Bilder benutzt werden. Alle verwendeten Bilder 
+// müssen im gleichen Verzeichnis stehen.
+// Dann ersetzt du einfach die Bildernamen 
+// zwischen den Anführungszeichen unten 
+// durch deine eigenen Bilder. Wenn sich alle
+// Bilder in einem Tripod Unterverzeichnis 
+// liegen (z.B. "images/" wie im Beispiel unten)
+// musst du den Pfad entsprechend ändern.
+
+var imgz = new imageArray("images/0.gif","images/1.gif","images/2.gif","images/3.gif","images/4.gif","images/5.gif","images/6.gif","images/7.gif","images/8.gif","images/9.gif");
+
+document.write('<img name="myImages" border="1" src="'+imgz[0]+'">');
+
+function getPosition(val)
+{
+  var goodnum = current+val;
+  if (goodnum < 0)
+  
+// Diese Nachricht wird angezeigt, wenn der 
+// Benutzer am Anfang der Bilderauswahl ist und versucht
+// noch weiter zu gehen. Schreib deine Nachricht 
+// zwischen die Anführungszeichen unten.
+
+    alert("Es geht nicht mehr weiter zurück!");
+
+  else
+    if (goodnum > imgz.length-1)
+	
+// Diese Nachricht wird angezeigt, wenn der 
+// Benutzer am Ende der Bilderauswahl ist und versucht
+// noch weiter zu gehen. Schreib deine Nachricht 
+// zwischen die Anführungszeichen unten.
+
+      alert("Es geht nicht mehr weiter vorwärts!");
+    else
+      document.myImages.src = imgz[goodnum];
+
+  current = goodnum;
+}
+
+//-->
+</script>
+<br>
+  <input type="button" value="<<" onclick="getPosition(-1)">  
+  <input type="button" value=">>" onclick="getPosition(1)">
+</center>
+</form>
+

@@ -1,0 +1,12 @@
+DIV.figure {
+	BORDER-RIGHT: #ccccff thin solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #ccccff thin solid; PADDING-LEFT: 0.5em; FLOAT: right; PADDING-BOTTOM: 0.5em; MARGIN: 0px; BORDER-LEFT: #ccccff thin solid; WIDTH: 35%; PADDING-TOP: 0.5em; BORDER-BOTTOM: #ccccff thin solid; TEXT-ALIGN: center
+}
+P.caption {
+	FONT-SIZE: smaller; FLOAT: left; TEXT-INDENT: 0px; FONT-STYLE: italic
+}
+DIV.figure2 {
+	BORDER-RIGHT: #ccffcc thin solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #ccffcc thin solid; PADDING-LEFT: 0.5em; FLOAT: right; PADDING-BOTTOM: 0.5em; MARGIN: 0.5em; BORDER-LEFT: #ccffcc thin solid; WIDTH: 25%; PADDING-TOP: 0.5em; BORDER-BOTTOM: #ccffcc thin solid; TEXT-ALIGN: center
+}
+IMG.scaled {
+	WIDTH: 100%
+}

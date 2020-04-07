@@ -1,0 +1,182 @@
+/* Combined style sheet for the index pages and the slide pages. */
+
+/* Style for all bodies and to control the margin on top. */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #F0F0F0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	SCROLLBAR-FACE-COLOR: #ACC2E3; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #F7F7F7; 
+	SCROLLBAR-SHADOW-COLOR: #F7F7F7; 
+	SCROLLBAR-3DLIGHT-COLOR: #ACC2E3; 
+	SCROLLBAR-ARROW-COLOR:#F7F7F7; 
+	SCROLLBAR-TRACK-COLOR:#F7F7F7; 
+	SCROLLBAR-DARKSHADOW-COLOR: #ACC2E3; 
+	SCROLLBAR-BASE-COLOR: #F7F7F7;
+}
+
+/* Style for the Image/Folder Path Information */
+.bpppath {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+/* Style for the Image/Folder Index Information */
+.bppindex {
+	color: #FAFAFA;
+}
+
+/* Style for the Header */
+.bppheader {
+	color: #636363;
+}
+
+/* Style for the Footer */
+.bppfooter {
+	color: #636363;
+}
+
+/* Style for the page body */
+.pagebody {
+	background-color: #F7FBFF;
+}
+
+/* Style for the Image Comment */
+.comment {
+	color: #585858;
+	font-size: 10px;
+}
+
+/* Style for any note/comment */
+.note {
+	color: #585858;
+	font-size: 10px;
+}
+
+
+/* For the folder icon overlaying a thumbnail. */
+.foldersign {
+	position:relative;
+	left:-0px;
+	top:-22px;
+	z-index:1;
+	border: 0;
+}
+
+.imageexif {
+	position:absolute;
+	left:73px;
+	top:104px;
+	width: 380px;
+	z-index:1;
+	background-color: #FFFFCC;
+	layer-background-color: #FFFFFF;
+	visibility: hidden;
+	border: 1px dashed #000000;
+	padding: 5px 5px 5px 5px;
+}
+
+.small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+/* To control the font of the image label */
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+}
+
+/* Custom link styles */
+a:active {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: red;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a.footer:active {
+	text-decoration: none;
+	color: black;
+}
+
+a.footer:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a.footer:hover {
+	text-decoration: none;
+	color: red;
+}
+
+a.footer:link {
+	text-decoration: none;
+	color: black;
+}
+
+a.note:active {
+	text-decoration: none;
+	color: #585858;
+}
+
+a.note:visited {
+	text-decoration: none;
+	color: #585858;
+}
+
+a.note:hover {
+	text-decoration: none;
+	color: red;
+}
+
+a.note:link {
+	text-decoration: none;
+	color: #585858;
+}
+
+a.path:active {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+a.path:visited {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+a.path:hover {
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FAFAFA;
+}
+
+a.path:link {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FAFAFA;
+}

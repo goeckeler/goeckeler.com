@@ -1,0 +1,83 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #346560 url(bilder/hintergrund.gif) no-repeat;
+color: #602624;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 3em;
+}
+
+h1, p {
+padding: .2em .7em;
+}
+
+h1 {
+background: #86AD2C;
+color: #FFF;
+font-size: 1.1em;
+line-height: 1.2em;
+}
+
+p {
+background: #FFF;
+padding-top: 1em;
+}
+
+div {
+position: absolute;
+}
+
+div#abschnitt1, div#abschnitt2 {
+width: 15em;
+}
+
+div#abschnitt1 {
+z-index: 1;
+}
+
+div#abschnitt2 {
+left: 3em;
+top: 1.5em;
+}
+
+.e-oben, .e-unten {
+display: block;
+}
+
+.e-oben *, .e-unten * {
+display: block;
+font-size: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+#abschnitt1 .e-oben *, #abschnitt1 .e-unten * {
+background: #86AD2C;
+}
+
+#abschnitt2 .e-oben *, #abschnitt2 .e-unten * {
+background: #FFF;
+}
+
+.e-oben .e1, .e-unten .e4 {
+margin: 0 5px;
+}
+
+.e-oben .e2, .e-unten .e3 {
+margin: 0 3px;
+}
+
+.e-oben .e3, .e-unten .e2 {
+margin: 0 2px;
+}
+
+.e-oben .e4, .e-unten .e1 {
+height: 2px;
+margin: 0 1px;
+}

@@ -1,0 +1,54 @@
+#p1 {
+	LEFT: 90px; POSITION: absolute; TOP: 260px
+}
+#p2 {
+	LEFT: 10px; POSITION: absolute; TOP: 225px
+}
+#p3 {
+	LEFT: 26px; POSITION: absolute; TOP: 200px
+}
+#p4 {
+	LEFT: 300px; POSITION: absolute; TOP: 250px
+}
+#p5 {
+	LEFT: 55px; POSITION: absolute; TOP: 300px
+}
+#p6 {
+	LEFT: 320px; POSITION: absolute; TOP: 200px
+}
+#p7 {
+	LEFT: 120px; POSITION: absolute; TOP: 170px
+}
+#p8 {
+	LEFT: 100px; POSITION: absolute; TOP: 350px
+}
+#p9 {
+	LEFT: 225px; POSITION: absolute; TOP: 330px
+}
+#w1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%; COLOR: #9933ff; FONT-FAMILY: sans-serif
+}
+#w2 {
+	FONT-SIZE: 250%; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: serif
+}
+#w3 {
+	FONT-SIZE: 170%; COLOR: #009900; FONT-FAMILY: Verdana, sans-serif
+}
+#w4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 350%; COLOR: #cc3333; FONT-FAMILY: Verdana, sans-serif
+}
+#w5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 170%; COLOR: #3333ff; FONT-FAMILY: Verdana, sans-serif
+}
+#w6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%; COLOR: #33cc33; FONT-FAMILY: Courier, monospace
+}
+#w7 {
+	FONT-WEIGHT: bold; FONT-SIZE: 170%; COLOR: #9933ff; FONT-FAMILY: Courier, monospace
+}
+#w8 {
+	FONT-WEIGHT: bold; FONT-SIZE: 250%; COLOR: #993366; FONT-FAMILY: Helvetica, sans-serif
+}
+#w9 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%; COLOR: #3399ff; FONT-FAMILY: sans-serif
+}

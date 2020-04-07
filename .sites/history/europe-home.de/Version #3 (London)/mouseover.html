@@ -1,0 +1,23 @@
+<HEAD>
+<script language="JavaScript">
+var preload = false;
+about       = new Image();
+about.src   = "images/about.gif";
+abouton     = new Image();
+abouton.src = "images/about-select.gif";
+
+function imageon(name) { document[name].src = eval(name + "on.src"); }
+function imageoff(name) { document[name].src = eval(name + ".src"); }
+
+preload = true;
+
+function on(name) { if (preload) imageon(name); }
+function off(name) { if (preload) imageoff(name); }
+</script>
+</HEAD>
+
+<BODY>
+<!--Dieses Skript gehört in die BODY Sektion.-->
+<a href="about.html" onmouseover="on('about');" onmouseout="off('about')">
+<img src="images/about.gif" border="0" name="about"></a>
+</BODY>

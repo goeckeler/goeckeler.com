@@ -1,0 +1,202 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: url(bilder/hintergrund.gif);
+color: #000;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+text-align: center;
+}
+
+h1 {
+background: url(bilder/ueberschrift.jpg);
+}
+
+h1 a, div#nav-1 li, div#nav-1 li a {
+text-decoration: none;
+text-indent: -999em;
+}
+
+h1 a {
+display: block;
+height: 176px;
+width: 770px;
+}
+
+div#haupt {
+background: #FFF url(bilder/nav-schatten.gif) repeat-y;
+margin: auto;
+overflow: hidden;
+text-align: left;
+width: 770px;
+}
+
+div#haupt > div#inhalt { /* nur MOSe */
+height: 437px;
+overflow: auto;
+}
+
+div#nav-1 {
+background: #000;
+height: 14px;
+position: relative;
+}
+
+div#nav-1 ul, div#nav-2 ul {
+list-style: none;
+}
+
+div#nav-1 ul {
+left: 292px;
+position: absolute;
+}
+
+div#nav-1 li {
+float: left;
+height: 26px;
+margin-right: 5px;
+width: 109px;
+}
+
+div#nav-1 li a {
+display: block;
+height: 100%;
+}
+
+div#nav-1 li#news a {
+background: url(bilder/news.gif);
+}
+
+div#nav-1 li#news, div#nav-1 li#news a:focus, div#nav-1 li#news a:hover, div#nav-1 li#news a:active {
+background: url(bilder/news-an.gif);
+}
+
+div#nav-1 li#philosophie a {
+background: url(bilder/philosophie.gif);
+}
+
+div#nav-1 li#philosophie, div#nav-1 li#philosophie a:focus, div#nav-1 li#philosophie a:hover, div#nav-1 li#philosophie a:active {
+background: url(bilder/philosophie-an.gif);
+}
+
+div#nav-1 li#portfolio a {
+background: url(bilder/portfolio.gif);
+}
+
+div#nav-1 li#portfolio, div#nav-1 li#portfolio a:focus, div#nav-1 li#portfolio a:hover, div#nav-1 li#portfolio a:active {
+background: url(bilder/portfolio-an.gif);
+}
+
+div#nav-1 li#kontakt a {
+background: url(bilder/kontakt.gif);
+}
+
+div#nav-1 li#kontakt, div#nav-1 li#kontakt a:focus, div#nav-1 li#kontakt a:hover, div#nav-1 li#kontakt a:active {
+background: url(bilder/kontakt-an.gif);
+}
+
+div#nav-2 {
+background: url(bilder/nav-hintergrund.jpg);
+float: left;
+height: 462px;
+width: 150px;
+}
+
+div#nav-2 ul {
+border-bottom: 1px solid #FFF;
+margin-top: 45px;
+}
+
+div#nav-2 li, div#nav-2 li a {
+color: #FFF;
+text-align: right;
+}
+
+div#nav-2 li {
+border-top: 1px solid;
+font-size: 1.2em;
+height: 27px;
+width: 150px;
+}
+
+div#nav-2 li a, div#nav-2 li span {
+display: block;
+font-weight: normal;
+height: 100%;
+padding-right: 18px;
+text-decoration: none;
+}
+
+div#nav-2 li a:focus, div#nav-2 li a:hover, div#nav-2 li a:active, div#nav-2 li span {
+font-weight: bold;
+}
+
+div#nav-2 li > a:focus, div#nav-2 li > a:hover, div#nav-2 li > a:active, div#nav-2 li > span { /* nur MOSe */
+background: url(bilder/nav-highlight.png);
+}
+
+div#inhalt {
+float: left;
+padding: 10px 0 15px 55px;
+width: 620px; /* nur IE 5.x */
+width/**/:/**/ 565px;
+}
+
+div#inhalt div {
+float: left;
+font-size: .9em;
+height: 102px; /* nur IE 5.x */
+height/**/:/**/ 108px;
+margin: 15px 20px 15px 0;
+width: 65px; /* nur IE 5.x */
+width/**/:/**/ 85px;
+}
+
+div#inhalt div.bild {
+background: url(bilder/schatten.gif) bottom right no-repeat;
+margin-right: 5px;
+width: 152px; /* nur IE 5.x */
+width/**/:/**/ 158px;
+}
+
+div#inhalt div.bild img {
+background: #FFF;
+border: 1px solid #979797;
+left: -5px;
+padding: 3px;
+position: relative;
+top: -5px;
+}
+
+div#fusszeile {
+clear: left;
+color: #FFF;
+}
+
+div#fusszeile, a#aux:focus, a#aux:active {
+background: #000;
+border-bottom: 5px solid;
+display: block;
+height: auto;
+padding: 1em 0;
+text-align: center;
+top: 0;
+width: 770px;
+}
+
+a {
+color: #FFF;
+}
+
+a#aux {
+height: 1px;
+overflow: hidden;
+position: absolute;
+top: -999em;
+width: 1px;
+}

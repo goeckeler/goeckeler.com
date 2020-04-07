@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)http://www.heise.de/ix/browser/javascript/ticker.html -->
+<HTML><HEAD><TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>BODY {
+	BACKGROUND: #000000; COLOR: #cccccc
+}
+#tickerDiv {
+	BACKGROUND: #333333; LEFT: 5px; WIDTH: 200px; CLIP: rect(0px 200px 150px 0px); POSITION: absolute; TOP: 200px; HEIGHT: 150px; layer-background-color: #333333
+}
+#tickerText {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12pt; BACKGROUND: #333333; LEFT: 0px; PADDING-BOTTOM: 10px; WIDTH: 200px; COLOR: #cccccc; PADDING-TOP: 10px; FONT-FAMILY: Arial,sans-serif; POSITION: absolute; TOP: 0px
+}
+A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ccccff
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #cccccc
+}
+</STYLE>
+
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+
+userAgent = navigator.userAgent.toLowerCase();
+n4 = document.layers;
+ie = (document.all && userAgent.indexOf("mac")<0);
+w3c = document.documentElement;
+dhtml = ((n4 || ie || w3c) &&  userAgent.indexOf("aol")<0);
+
+function Ticker(name, parentId, id, hoehe){
+	this.name = name;
+	this.hoehe = hoehe;
+	this.el = n4? document.layers[parentId].document.layers[id] : ie? document.all[id] : document.getElementById(id);
+	this.css = n4? this.el : this.el.style;
+	this.inhaltHoehe = n4? this.el.document.height : this.el.offsetHeight;
+	this.inhaltY = 0;
+	this.speed = 2;
+	this.hoch = TickerHoch;
+	this.runter = TickerRunter;
+	this.stop = TickerStop;
+}
+
+function TickerHoch() {
+	this.stop();
+	this.timer = setTimeout(this.name+".hoch()", 40);
+	if (this.inhaltY>-this.inhaltHoehe) this.inhaltY -= this.speed;
+	else this.inhaltY = this.hoehe;
+	this.css.top = this.inhaltY;
+}
+
+function TickerRunter() {
+	this.stop();
+	this.timer = setTimeout(this.name+".runter()", 40);
+	if (this.inhaltY<this.hoehe) this.inhaltY += this.speed;
+	else this.inhaltY = -this.inhaltHoehe;
+	this.css.top = this.inhaltY;
+}
+
+function TickerStop() {
+	if (this.timer) clearTimeout(this.timer);
+}
+
+function init(){
+	if (!dhtml) return;
+	einTicker = new Ticker("einTicker", "tickerDiv", "tickerText", 150);
+	einTicker.hoch();
+}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 5.50.4134.600" name=GENERATOR></HEAD>
+<BODY onload=init()>
+<H1>Ticker Demonstration</H1>
+<DIV id=tickerDiv>
+<DIV id=tickerText>
+<P><IMG alt=iX-Logo src="script-ticker_files/iX.mini.tr.gif"></P>
+<H2>Mehr Inhalt</H2>
+<P>Ticker-Text...<BR><BR>Hier kann irgend ein HTML-Code 
+stehen.</P></DIV></DIV><A 
+href="javascript:if(dhtml)%20void(einTicker.speed*=2)">schneller</A><BR><A 
+href="javascript:if(dhtml)%20void(einTicker.speed/=2)">langsamer</A><BR><A 
+href="javascript:if(dhtml)%20einTicker.stop()">stop</A><BR><A 
+href="javascript:if(dhtml)%20einTicker.runter()">runter</A><BR><A 
+href="javascript:if(dhtml)%20einTicker.hoch()">hoch</A><BR></BODY></HTML>

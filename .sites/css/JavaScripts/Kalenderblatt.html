@@ -1,0 +1,47 @@
+<!-- Displays the current date as a Kalenderblatt  -->
+
+<!--Source date display -->
+<html>
+<script language = javascript>
+var Today=new Date();
+var ThisDay=Today.getDay(); // a number between 0 and 6 represent the weekday
+var ThisDate=Today.getDate(); //day number between 0 and 31
+var ThisMonth=Today.getMonth()+1; //month number between 0 and 12
+
+function DayTxt (DayNumber) {
+var Day=new Array();
+Day[0]="Sonntag";
+Day[1]="Montag";
+Day[2]="Dienstag";
+Day[3]="Mittwoch";
+Day[4]="Donnerstag";
+Day[5]="Freitag";
+Day[6]="Samstag";
+return Day[DayNumber];
+}
+
+var DayName=DayTxt(ThisDay);
+
+function MonthTxt (MonthNumber) {
+var Month=new Array();
+Month[1]="Januar";
+Month[2]="Februar";
+Month[3]="M&auml;rz";
+Month[4]="April";
+Month[5]="Mai";
+Month[6]="Juni";
+Month[7]="Juli";
+Month[8]="August";
+Month[9]="September";
+Month[10]="Oktober";
+Month[11]="November";
+Month[12]="Dezember";
+return Month[MonthNumber];
+}
+
+var MonthName=MonthTxt(ThisMonth);
+
+document.write("<center><TABLE BORDER=3 BGCOLOR=\"#004080\" bordercolor=WHITE bordercolorlight=YELLOW bordercolordark=GOLD WIDTH=75 HEIGHT=85><tr><TD align=center><font face=\"Verdana,Helvetica,Arial,Geneva\" size=-2 color=white>"+DayName+"<br><font color=GOLD size=+3 >"+ThisDate+"</font><br>"+MonthName+"<br></b></font></TD></TR></TABLE>");
+</script>
+
+<!-- end Source -->

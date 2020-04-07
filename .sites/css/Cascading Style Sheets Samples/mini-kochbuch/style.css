@@ -1,0 +1,95 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF;
+color: #000;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 50px 0 10px;
+}
+
+body > div#nav { /* nur MOSe */
+background: url(bilder/klecks.png);
+}
+
+h1, h2 {
+font-size: 1.3em;
+}
+
+h1, a {
+color: #FFF;
+}
+
+h1 {
+margin: 50px 7px 0;
+}
+
+h2 {
+margin-top: -175px;
+padding-top: 175px;
+}
+
+h2#rezept-1 {
+margin-top: 0;
+}
+
+h3, div#nav, div#rezepte {
+font-size: 1em;
+}
+
+p {
+margin: 1em 0;
+}
+
+ul {
+list-style: none;
+margin: 5px 7px;
+}
+
+div {
+background: #ECF2F7 top right no-repeat;
+font-size: 1px;
+height: 6px;
+width: 295px;
+}
+
+div#nav {
+background: url(bilder/klecks.gif);
+height: 458px;
+position: absolute;
+top: 0;
+width: 206px;
+z-index: 1;
+}
+
+div#oben {
+background-image: url(bilder/ecke-oben.gif);
+}
+
+div#rezepte {
+height: 372px;
+overflow: auto;
+padding: 10px 10px 10px 30px;
+width: 295px; /* nur IE 5.x */
+width/**/:/**/ 255px;
+}
+
+div#unten {
+background-image: url(bilder/ecke-unten.gif);
+}
+
+a {
+font-weight: bold;
+line-height: 20px;
+text-decoration: none;
+}
+
+a:focus, a:hover {
+background: url(bilder/pfeil.gif) 0 2px no-repeat;
+padding-left: 10px;
+}

@@ -1,0 +1,162 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #292929 url(bilder/hintergrund.gif);
+color: #000;
+font: bold 75%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+background: url(bilder/block.gif) top center no-repeat;
+height: 628px;
+margin: 20px 0;
+text-align: center;
+}
+
+h1 {
+background: url(bilder/ueberschrift.gif) bottom no-repeat;
+font-size: 1em;
+height: 36px;
+margin-left: 80px;
+padding-top: 112px;
+text-indent: -999em;
+}
+
+p {
+background: url(bilder/pfeil.gif) no-repeat;
+left: 65px;
+padding-left: 30px;
+position: absolute;
+text-align: left;
+top: 310px;
+width: 310px; /* nur IE 5.x */
+width/**/:/**/ 280px;
+}
+
+ul, div {
+position: relative;
+width: 623px;
+}
+
+ul {
+background: url(bilder/bild-1-gr.jpg) right no-repeat;
+height: 353px;
+list-style: none;
+}
+
+li {
+float: left;
+margin: 16px 16px 0 0;
+width: 84px;
+}
+
+li a {
+display: block;
+height: 81px;
+}
+
+li span {
+display: none;
+}
+
+li#bild-1 a {
+background: url(bilder/bild-1-kl.jpg);
+}
+
+li#bild-2 a {
+background: url(bilder/bild-2-kl.jpg);
+}
+
+li#bild-3, li#bild-6 {
+margin-right: 300px;
+}
+
+li#bild-3 a {
+background: url(bilder/bild-3-kl.jpg);
+}
+
+li#bild-4, li#bild-7 {
+clear: left;
+}
+
+li#bild-4 a {
+background: url(bilder/bild-4-kl.jpg);
+}
+
+li#bild-5 a {
+background: url(bilder/bild-5-kl.jpg);
+}
+
+li#bild-6 a {
+background: url(bilder/bild-6-kl.jpg);
+}
+
+li#bild-7 a {
+background: url(bilder/bild-7-kl.jpg);
+}
+
+li#bild-8 a {
+background: url(bilder/bild-8-kl.jpg);
+}
+
+li#bild-9 a {
+background: url(bilder/bild-9-kl.jpg);
+}
+
+div {
+margin: 41px auto 0;
+padding-left: 65px;
+}
+
+div > div.klebestreifen.oben { /* nur MOSe */
+background: url(bilder/klebestreifen-oben.png);
+}
+
+div > div.klebestreifen.unten { /* nur MOSe */
+background: url(bilder/klebestreifen-unten.png);
+}
+
+div.klebestreifen {
+padding: 0;
+position: absolute;
+}
+
+div.klebestreifen.oben {
+background: url(bilder/klebestreifen-oben.gif);
+height: 67px;
+right: 212px;
+top: -63px;
+width: 83px;
+}
+
+div.klebestreifen.unten {
+background: url(bilder/klebestreifen-unten.gif);
+height: 54px;
+right: -32px;
+top: 278px;
+width: 86px;
+}
+
+a {
+border: 1px solid #999;
+}
+
+a:focus, a:hover {
+border: 1px solid #000;
+}
+
+a:focus span, a:hover span {
+display: block;
+height: 353px;
+position: absolute;
+right: 0;
+top: 0;
+width: 264px;
+}
+
+a img {
+border: 0;
+}

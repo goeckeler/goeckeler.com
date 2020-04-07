@@ -1,0 +1,56 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #002238;
+}
+
+h1 {
+height: 85px;
+}
+
+h1 a, li a {
+display: block;
+height: 100%;
+text-decoration: none;
+text-indent: -999em;
+}
+
+h1 a {
+background: url(bilder/fischwelten.gif) 15px 24px no-repeat;
+}
+
+ul {
+background: #8A3304;
+height: 138px;
+list-style: none;
+padding: 10px;
+}
+
+li {
+float: left;
+height: 138px;
+width: 138px;
+}
+
+li#nav-1 a {
+background: url(bilder/nav-1.gif);
+}
+
+li#nav-2 a {
+background: url(bilder/nav-2.gif);
+}
+
+li#nav-3 a {
+background: url(bilder/nav-3.gif);
+}
+
+li#nav-4 a {
+background: url(bilder/nav-4.gif);
+}
+
+li#nav-5 a {
+background: url(bilder/nav-5.gif);
+}

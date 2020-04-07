@@ -1,0 +1,169 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #F2B96E url(bilder/spalte-1-hintergrund.gif) repeat-y;
+color: #000;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+h1 {
+background: #FFF url(bilder/kopf.jpg) no-repeat;
+height: 221px;
+width: 100%;
+}
+
+h1 a, h1 span {
+background: url(bilder/logo.gif);
+display: block;
+height: 148px;
+left: 37px;
+position: absolute;
+text-decoration: none;
+text-indent: -999em;
+top: 61px;
+width: 156px;
+}
+
+h2 {
+font-size: 1.3em;
+}
+
+p {
+margin-bottom: 1em;
+}
+
+div#nav {
+background: url(bilder/nav-hintergrund.gif);
+height: 26px;
+}
+
+div#nav ul {
+list-style: none;
+}
+
+div#nav ul.a, div#nav ul.a li, div#nav ul.b li {
+float: left;
+}
+
+div#nav ul.a {
+background: url(bilder/nav-a-verzierung.gif) right;
+padding-right: 49px;
+width: 470px;
+}
+
+div#nav ul.a li, div#nav ul.a li a:hover {
+background: url(bilder/nav-a-button-an.gif);
+}
+
+div#nav ul.a li a {
+background: url(bilder/nav-a-button.gif);
+}
+
+div#nav ul.b {
+float: right;
+width: 188px;
+}
+
+div#nav ul.b li, div#nav ul.b li a:hover {
+background: url(bilder/nav-b-button-an.gif);
+}
+
+div#nav ul.b li a {
+background: url(bilder/nav-b-button.gif);
+}
+
+div#nav li, div#nav li a {
+color: #FFF;
+height: 26px;
+text-decoration: none;
+}
+
+div#nav li {
+font-size: 1.1em;
+font-weight: bold;
+line-height: 1.95;
+width: 94px;
+text-align: center;
+}
+
+div#nav li a {
+display: block;
+}
+
+div#inhalt {
+margin: 0 194px 0 189px;
+padding: 2em;
+}
+
+div#spalte-1, div#spalte-2 {
+color: #FFF;
+position: absolute;
+top: 247px;
+}
+
+div#spalte-1 {
+background: #F2B96E url(bilder/spalte-1.gif);
+height: 507px;
+left: 0;
+width: 189px;
+}
+
+div#spalte-1 h2, div#spalte-2 h2 {
+font-size: 1.1em;
+}
+
+div#spalte-1 h2 {
+margin: 30px 0 0 10px;
+}
+
+div#spalte-1 ul {
+list-style: circle;
+margin: 30px 0 0 26px;
+}
+
+div#spalte-1 ul#w {
+background: url(bilder/hintergrund-w.gif) 30px 0 no-repeat;
+}
+
+div#spalte-1 ul#m {
+background: url(bilder/hintergrund-m.gif) 30px 0 no-repeat;
+}
+
+div#spalte-1 a {
+color: #FFF;
+}
+
+div#spalte-2 {
+background: url(bilder/spalte-2.gif);
+height: 402px;
+right: 0;
+width: 194px;
+}
+
+div#spalte-2 h2 {
+margin: 30px 0 0 35px;
+}
+
+div#spalte-2 p {
+margin: 10px 15px 10px 35px;
+}
+
+hr {
+border: 0;
+border-bottom: 1px solid #FFF;
+height: 1px;
+margin: 0 10px 0 30px;
+width: 154px;
+}
+
+img {
+float: right;
+margin: 0 0 2em 2em;
+}
+
+a {
+color: #000;
+}

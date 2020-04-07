@@ -1,0 +1,155 @@
+/* Design by Thorsten Göckeler. */
+/* CSS released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/ */
+
+body {
+  margin : 6pt;
+  padding : 6pt;
+  font-family : "Trebuchet MS", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+  font-size : 10pt;
+  font-weight : normal;
+  color : black;
+  background-color : #FFFFCC;
+}
+
+#contents {
+  top : 50px;
+  position : relative;
+  z-index : 0;
+}
+
+#contents A {
+  text-decoration : none;
+}
+
+#contents A.in:before {
+  content:url(images/inlink.gif)  
+}
+
+#contents A.out:before {
+  content:url(images/outlink.gif)  
+}
+
+#contents A:link  {
+  text-decoration : none;
+  color : #000099;
+}
+   
+#contents A:visited  {
+  text-decoration : none;
+  color : #CC9999;
+} 
+ 
+#contents A:active  {
+  text-decoration : none;
+  color : #000099;
+}
+   
+#contents A[href]:hover  {
+  text-decoration : underline;
+  font-weight : bold;
+  color : #000099;
+}
+
+#contents h1 {
+  font-size : 12pt;
+  font-weight : bold;
+  margin-top : 6pt;
+  margin-bottom : 6pt;
+}
+
+#contents h2 {
+  font-size : 10pt;
+  font-weight : bold;
+  margin-top : 0pt;
+  margin-bottom : 3pt;
+}
+
+#contents h3 {
+  font-size : 10pt;
+  font-weight : bold;
+  font-style: italic;
+  vertical-align: top;
+}
+
+#menu {
+  font-size : 12pt;
+  position : absolute;
+  right: 0;
+  top: 0;
+  z-index : 4;
+  margin-right : 20px;
+  margin-top : 12px;
+  padding-top : 8px; /* 8px + 6x = 14px -> #header */
+  /* hack to scheme IE (and unfortunately Opera) */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+  padding-top : 0px;
+  margin-top : 6px;
+  /* position : fixed; */
+}
+
+/* re-hack for Opera */
+body>#menu {
+  padding-top : 0px;
+  margin-top : 6px;
+}
+
+#menu li {
+  list-style : none;
+  display: inline;
+  color: #CCCCCC;
+  padding : 3px;
+}
+
+#menu A {
+  text-decoration : none;
+  color : black;
+}
+
+#menu A:hover  {
+  text-decoration : none;
+  color : white;
+}
+
+#menu img {
+  border : none;
+  vertical-align : middle;
+  /* hack to scheme IE (and unfortunately Opera) */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+  vertical-align : sub;
+}
+
+#header {
+  font-size : 12pt;
+  background : #FF9933;
+  color : #B33000;
+  border-top : 1px solid #000000;
+  border-bottom : 1px solid #000000;
+  margin-top : 6px;
+  padding-top : 14px;
+  padding-left : 20px;
+  padding-right : 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height : 54px;
+  z-index : 2;
+  /* hack to scheme IE */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:100%;
+  padding-top : 0px;
+  /* position : fixed; */
+}
+
+/* re-hack for Opera */
+body>#header {
+  width:100%;
+  padding-top : 0px;
+}
+
+#header p {
+  font-weight : bold;
+}

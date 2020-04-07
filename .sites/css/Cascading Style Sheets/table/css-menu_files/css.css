@@ -1,0 +1,42 @@
+A:hover {
+	BACKGROUND: #ffff33; COLOR: #660000
+}
+A:active {
+	COLOR: #00cc00
+}
+UNKNOWN {
+	TEXT-INDENT: 1em
+}
+P {
+	MARGIN-LEFT: 200px; MARGIN-RIGHT: 200px; FONT-FAMILY: sans-serif; TEXT-ALIGN: left
+}
+P.hinweis:unknown {
+	BORDER-RIGHT: blue solid; BORDER-TOP: blue solid; BORDER-LEFT: blue solid; BORDER-BOTTOM: blue solid; content: "Achtung: "
+}
+Q:unknown {
+	content: open-quote
+}
+Q:unknown {
+	content: close-quote
+}
+UNKNOWN {
+	quotes: '"' '"' "'" "'"
+}
+UNKNOWN {
+	quotes: "«" "»" "'" "'"
+}
+SPAN.glow {
+	BACKGROUND: white; COLOR: green; text-shadow: black 0px 0px 5px
+}
+H4.schatten1 {
+	text-shadow: 0.2em 0.2em
+}
+H4.schatten2 {
+	text-shadow: 3px 3px 5px red
+}
+H4.schatten3 {
+	text-shadow: 3px 3px red, yellow -3px 3px 2px, 3px -3px
+}
+H4.schatten4 {
+	text-shadow: 3px 3px red, yellow -3px 3px 2px, 3px -3px
+}

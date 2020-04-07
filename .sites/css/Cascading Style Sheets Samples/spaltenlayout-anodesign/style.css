@@ -1,0 +1,82 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html, a {
+color: #000;
+}
+
+html {
+background: #FFF url(bilder/hintergrund.gif) repeat-y;
+font: 85%/1.3 georgia, serif;
+}
+
+body > div { /* nur MOSe */
+border-left: 1px solid;
+}
+
+h1, h1 a {
+height: 375px;
+}
+
+h1, ul {
+position: absolute;
+}
+
+h1 {
+background: url(bilder/logo.gif);
+left: 0;
+text-indent: -999em;
+width: 215px;
+}
+
+h1 a, li a {
+text-decoration: none;
+}
+
+h1 a {
+display: block;
+}
+
+h2 {
+color: #C70000;
+font-size: 2.2em;
+}
+
+p {
+margin-top: 1em;
+}
+
+p#anreisser {
+font-style: italic;
+}
+
+ul {
+left: 240px;
+list-style: none;
+top: 60px;
+}
+
+ul ul {
+margin-left: 1.5em;
+position: static;
+}
+
+li {
+line-height: 2em;
+}
+
+li a:hover {
+text-decoration: underline;
+}
+
+div {
+background: #EDEBD5;
+margin-left: 430px;
+padding: 2em;
+}
+
+.aktiv {
+color: #C70000;
+}

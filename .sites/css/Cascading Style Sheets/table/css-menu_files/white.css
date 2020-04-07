@@ -1,0 +1,36 @@
+DIV.banner {
+	FONT-WEIGHT: bold; RIGHT: 2em; LEFT: auto; MARGIN: 0px; WIDTH: 10em; LINE-HEIGHT: 1.5; POSITION: fixed; TOP: 2em; TEXT-ALIGN: center
+}
+DIV.banner P {
+	BORDER-RIGHT: #663333 thin outset; PADDING-RIGHT: 0.4em; BORDER-TOP: #663333 thin outset; PADDING-LEFT: 0.4em; BACKGROUND: #ffffff; PADDING-BOTTOM: 0.3em; MARGIN: 0px; BORDER-LEFT: #663333 thin outset; COLOR: blue; PADDING-TOP: 0.3em; BORDER-BOTTOM: #663333 thin outset; FONT-FAMILY: Arial, sans-serif
+}
+DIV.banner A {
+	DISPLAY: block; MARGIN: 0px 0.5em
+}
+DIV.banner EM {
+	DISPLAY: block; MARGIN: 0px 0.5em
+}
+DIV.banner A {
+	BORDER-TOP: #900 2px groove
+}
+DIV.banner EM {
+	BORDER-TOP: #900 2px groove
+}
+DIV.banner A:unknown {
+	BORDER-TOP: medium none
+}
+DIV.banner EM {
+	COLOR: #ccccff
+}
+DIV.banner IMG {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN-BOTTOM: 1em; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+DIV.banner A:link {
+	COLOR: blue; TEXT-DECORATION: none
+}
+DIV.banner A:visited {
+	TEXT-DECORATION: none
+}
+DIV.banner A:hover {
+	BACKGROUND: #ffffff; COLOR: green
+}

@@ -1,0 +1,45 @@
+TABLE.eins {
+	BORDER-RIGHT: 10px outset; BORDER-TOP: 10px outset; BORDER-LEFT: 10px outset; BORDER-BOTTOM: 10px outset; BORDER-COLLAPSE: separate; border-spacing: 10px
+}
+TABLE.zwei {
+	BORDER-RIGHT: 10px outset; BORDER-TOP: 10px outset; BORDER-LEFT: 10px outset; BORDER-BOTTOM: 10px outset; BORDER-COLLAPSE: collapse; border-spacing: 15px
+}
+TABLE CAPTION {
+	TEXT-ALIGN: right; caption-side: right
+}
+TH {
+	FONT-WEIGHT: bold; COLOR: #669966; TEXT-ALIGN: center
+}
+TR#row1 {
+	BORDER-TOP: blue 3px solid; BACKGROUND: #cc0000
+}
+TR#row2 {
+	BORDER-TOP: black 1px solid; BACKGROUND: #00cc00
+}
+TR#row3 {
+	BORDER-TOP: red 1px solid; BACKGROUND: #0000cc
+}
+TD {
+	COLOR: #ccffcc
+}
+TD#tdneg {
+	BACKGROUND: #333333
+}
+TD.bill {
+	BORDER-RIGHT: #9999ff 3px solid; BORDER-TOP: #9999ff 3px solid; BACKGROUND: #666666; BORDER-LEFT: #9999ff 3px solid; BORDER-BOTTOM: #9999ff 3px solid; TEXT-ALIGN: right; inset: 10px
+}
+TD.bill:unknown {
+	TEXT-ALIGN: right; content: "DM "
+}
+tabelle {
+	WIDTH: 300px
+}
+zeile {
+	
+}
+zelle {
+	BORDER-RIGHT: #666699 solid; PADDING-RIGHT: 2px; BORDER-TOP: #666699 solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #666699 solid; PADDING-TOP: 2px; BORDER-BOTTOM: #666699 solid
+}
+ueberschrift {
+	
+}

@@ -1,0 +1,32 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: url(bilder/hintergrund.gif);
+color: #FFF;
+font: 13px/16px verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 3em;
+}
+
+h1 {
+font-size: 1.2em;
+}
+
+p {
+margin: 1em 0;
+}
+
+div {
+width: 425px;
+}
+
+img {
+clear: right;
+float: right;
+margin-left: 20px;
+}

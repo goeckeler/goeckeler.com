@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Uhrzeit automatisiert</title>
+</head>
+<body>
+
+Die aktuelle Zeit:
+<div id="uhr" style="position:absolute; left:10; top:90">
+</div>
+
+<script language="JavaScript1.2">
+<!--
+function tick() {
+   var jetzt = new Date();
+   var stunden = jetzt.getHours();
+   var minuten = jetzt.getMinutes();
+   var sekunden = jetzt.getSeconds();
+   if (stunden < 10) stunden = "0"+stunden;
+   if (minuten < 10) minuten = "0"+minuten;
+   if (sekunden <10) sekunden = "0"+sekunden;
+   var zeit = stunden+":"+minuten+":"+sekunden;
+   
+   if (document.layers) {
+      document.layers["uhr"].document.write(zeit);
+      document.layers["uhr"].document.close();
+   }
+   else if (document.all) {
+      document.all["uhr"].innerHTML = zeit;
+   }
+   else if (document.getElementById) {
+      document.getElementById("uhr").firstChild.nodeValue = zeit;
+   }
+}
+setInterval("tick()",1000);
+// -->
+</script>
+
+</body>
+</html>
+

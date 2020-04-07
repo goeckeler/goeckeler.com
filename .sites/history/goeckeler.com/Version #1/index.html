@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>goeckeler.com</title>
+<meta name="author" content="Thorsten G&ouml;ckeler">
+<meta name="language" content="de">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel="stylesheet" href="menu.css" type="text/css">
+<script language="JavaScript">
+<!--
+var Today=new Date();
+
+function DayTxt (DayNumber) {
+var Day=new Array();
+Day[0]="Sonntag";
+Day[1]="Montag";
+Day[2]="Dienstag";
+Day[3]="Mittwoch";
+Day[4]="Donnerstag";
+Day[5]="Freitag";
+Day[6]="Samstag";
+return Day[DayNumber];
+}
+
+function MonthTxt (MonthNumber) {
+var Month=new Array();
+Month[1]="Januar";
+Month[2]="Februar";
+Month[3]="M&auml;rz";
+Month[4]="April";
+Month[5]="Mai";
+Month[6]="Juni";
+Month[7]="Juli";
+Month[8]="August";
+Month[9]="September";
+Month[10]="Oktober";
+Month[11]="November";
+Month[12]="Dezember";
+return Month[MonthNumber];
+}
+
+function DateText (aDate) {
+var dayIndex=aDate.getDay();  // a number between 0 and 6 represent the weekday
+var day=aDate.getDate();      //day number between 0 and 31
+var month=aDate.getMonth()+1; //month number between 0 and 12
+var year=aDate.getYear();
+if (year < 1000) year += 1900; // Year 2000 issue
+return DayTxt(dayIndex) + ", den " + day + ". " + MonthTxt(month) + "  " + year;
+}
+
+function TodayText() {
+return DateText(Today);
+}
+// -->
+</script>
+
+</head>
+<DIV class=menu>
+<em>Home &raquo;</em>
+<a href="about.html">Wir &uuml;ber uns</a><em> &raquo;</em>
+<a href="direction.html">Anfahrt</a><em> &raquo;</em>
+<a href="contact.html">Kontakt</a>
+<hr>
+</DIV>
+
+<body>
+<table cellpadding=10>
+<colgroup>
+<col width="50%">
+<col>
+</colgroup>
+<tr valign=top>
+  <td><H2>goeckeler.com</H2>
+    <p>Dies ist die private Homepage der Familie G&ouml;ckeler. Sie ist f&uuml;r unsere Freunde, 
+	Bekannten und Verwandten gedacht, die in Deutschland, England, U.S.A.
+	oder wo auch immer auf dieser Erde wohnen. Sie soll unsere G&auml;ste ein wenig
+	unterst&uuml;tzen, falls diese in Versuchung kommen sollten, uns zu
+	besuchen ;-)</p>
+	<p>Aber es steht nat&uuml;rlich jedem Besucher frei, ein wenig 
+	herumzust&ouml;bern und mehr &uuml;ber uns herauszufinden. Vielleicht 
+	schreibt uns ja auch der eine oder andere, z.B. seine Meinung.</p>
+  </td>
+  <td>
+    <H2>Freitag, 16. August 2002</H2>
+	<p>Es hat etwas gedauert, aber nun sind wir auch unter <a href="http://www.goeckeler.com">www.goeckeler.com</a>
+	erreichbar, und	endlich ist die Anfahrtsbeschreibung fertig. Achtung, die email Adressen haben sich 
+	ge&auml;ndert, die alten gelten aber weiterhin.</p>
+  </td>
+</tr>
+</table>
+<hr>
+<center>Willkommen am 
+<script language="JavaScript">
+<!--
+document.write(TodayText());
+// -->
+</script> auf unserer Webseite.
+</center>
+</body>
+</html>

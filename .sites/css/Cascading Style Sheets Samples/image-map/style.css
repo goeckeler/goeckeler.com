@@ -1,0 +1,98 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF;
+color: #000;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+padding: 3em;
+}
+
+dl, dd a:focus, dd a:hover, dd a:active {
+background: url(bilder/urlaub.jpg);
+}
+
+dl {
+border: 2px solid;
+height: 317px;
+position: relative;
+width: 750px;
+}
+
+dt {
+display: none;
+}
+
+dd {
+position: absolute;
+}
+
+dd#hotel {
+height: 143px;
+left: 24px;
+top: 29px;
+width: 140px;
+}
+
+dd#hotel a:focus, dd#hotel a:hover, dd#hotel a:active {
+background-position: -24px -346px;
+}
+
+dd#hotel span {
+top: 145px;
+}
+
+dd#strand {
+height: 73px;
+left: 213px;
+top: 170px;
+width: 209px;
+}
+
+dd#strand a:focus, dd#strand a:hover, dd#strand a:active {
+background-position: -213px -487px;
+}
+
+dd#strand span {
+top: 75px;
+}
+
+dd#wetter {
+height: 103px;
+left: 476px;
+top: 41px;
+width: 220px;
+}
+
+dd#wetter a:focus, dd#wetter a:hover, dd#wetter a:active {
+background-position: -476px -358px;
+}
+
+dd#wetter span {
+top: 105px;
+}
+
+dd a {
+color: #FFF;
+display: block;
+height: 100%;
+text-decoration: none;
+width: 100%;
+}
+
+dd a span {
+background: #000;
+cursor: pointer;
+border: 2px solid;
+padding: .5em;
+position: absolute;
+}
+
+div {
+display: none;
+}

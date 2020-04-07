@@ -1,0 +1,135 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #4F7EC9;
+color: #FFF;
+font: 70%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+text-align: center;
+}
+
+h1, div#nav * {
+text-indent: -999em;
+}
+
+h1 {
+background: url(bilder/world-of-fish.gif) top center no-repeat;
+height: 168px;
+}
+
+h2, div#tagline {
+font-size: 1.2em;
+font-weight: bold;
+height: 36px;
+line-height: 1.8em;
+}
+
+h2 {
+background: url(bilder/ueberschrift.gif);
+padding-right: 7px;
+text-align: right;
+}
+
+p {
+background: #74A9DC;
+border: 1px solid #EEF5FB;
+border-top: 0;
+height: 122px; /* nur IE 5.x */
+height/**/:/**/ 100px;
+padding: 7px 14px 14px;
+}
+
+div#nav, div#inhalt {
+margin: auto;
+position: relative;
+text-align: left;
+width: 761px;
+}
+
+div#nav ul {
+left: 146px;
+list-style: none;
+position: absolute;
+top: -84px;
+width: 470px;
+}
+
+div#nav li {
+float: left;
+width: 94px;
+}
+
+div#nav li a {
+background-repeat: no-repeat;
+display: block;
+height: 88px;
+text-decoration: none;
+}
+
+div#nav li#tour a {
+background-image: url(bilder/nav-tour.gif);
+margin-top: 2px;
+}
+
+div#nav li#angebot a {
+background-image: url(bilder/nav-angebot.gif);
+margin-top: 7px;
+}
+
+div#nav li#ueber a {
+background-image: url(bilder/nav-ueber.gif);
+margin-top: 16px;
+}
+
+div#nav li#wissen a {
+background-image: url(bilder/nav-wissen.gif);
+margin-top: 10px;
+}
+
+div#nav li#kontakt a {
+background-image: url(bilder/nav-kontakt.gif);
+}
+
+div#nav div {
+background: url(bilder/neu.gif);
+height: 141px;
+left: 655px;
+position: absolute;
+width: 105px;
+top: -30px;
+}
+
+div#tagline {
+background: url(bilder/tagline-hintergrund.gif);
+margin-top: 47px;
+padding-right: 60px;
+}
+
+div#tagline span {
+background: url(bilder/tagline-aqua.gif) top right no-repeat;
+display: block;
+height: 17px;
+margin: -1.4em auto 0;
+padding-left: 391px; /* nur IE 5.x */
+padding-left/**/:/**/ 340px;
+width: 51px;
+}
+
+div#inhalt {
+padding: 25px 0;
+width: 645px;
+}
+
+div#inhalt div {
+float: left;
+width: 195px;
+}
+
+div#inhalt div#mitte {
+margin: 0 30px;
+}

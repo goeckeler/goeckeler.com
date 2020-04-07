@@ -1,0 +1,74 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+font: 70%/1.2 'trebuchet ms', arial, helvetica, sans-serif;
+}
+
+body {
+color: #444;
+padding: 20px;
+}
+
+h1 {
+font-size: 2em;
+font-weight: normal;
+margin-bottom: .3em;
+}
+
+table {
+border-collapse: collapse;
+font-size: 1em;
+table-layout: fixed;
+width: 100%;
+}
+
+th, td {
+border-right: 1px solid #FFF;
+padding: .7em .4em;
+text-align: center;
+}
+
+th {
+background: #9766A7 url(bilder/hintergrund.jpg) repeat-x;
+color: #FFF;
+font-weight: normal;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+td {
+background: #A07BAF url(bilder/hintergrund-zelle.jpg) bottom right no-repeat;
+border-top: 1px solid #712F86;
+}
+
+td.ja, td.nein, .speicher {
+width: 4em;
+}
+
+td.ja span, td.nein span {
+background: center center no-repeat;
+display: block;
+text-indent: -999em;
+}
+
+td.ja span {
+background-image: url(bilder/ja.png);
+}
+
+td.nein span {
+background-image: url(bilder/nein.png);
+}
+
+div#tabellenrand {
+border: 1px solid #712F86;
+padding: 3px;
+width: 60em;
+}
+
+.modell { 
+text-align: left; 
+width: 15em; 
+}

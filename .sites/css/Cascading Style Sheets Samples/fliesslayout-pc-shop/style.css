@@ -1,0 +1,148 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+background: #FFF;
+color: #000;
+font: 80%/1.2 verdana, arial, helvetica, sans-serif;
+}
+
+body {
+margin: 10px;
+}
+
+h1 {
+margin-bottom: 10px;
+}
+
+h2, div#nav strong {
+font: .95em georgia, serif;
+line-height: 42px;
+padding-left: 7px;
+text-transform: uppercase;
+}
+
+h2 a, div#nav a {
+color: #000;
+text-decoration: none;
+}
+
+h2 a:hover, div#nav strong a:hover {
+text-decoration: underline;
+}
+
+h3 {
+font-size: 1em;
+}
+
+p#anreisser {
+border-bottom: 1px dotted;
+margin: 0 30px 15px;
+padding-bottom: 15px;
+text-align: center;
+}
+
+div#werbung {
+left: 359px;
+position: absolute;
+top: 10px;
+}
+
+div#nav {
+border-right: 1px dotted;
+float: left;
+margin-right: 30px;
+padding-right: 30px;
+width: 158px;
+}
+
+div#nav ul {
+border: 1px solid #C0C0C0;
+border-top: 0;
+line-height: 1.4;
+list-style: none;
+margin-bottom: 10px;
+padding: 0 7px 7px 7px;
+width: 158px; /* nur IE 5.x */
+width/**/:/**/ 142px;
+}
+
+div#nav li {
+margin-left: -16px; /* nur IE 5.x - Ursache des Problems unklar */
+margin-left/**/:/**/ 0;
+}
+
+div#nav div {
+background-repeat: no-repeat;
+}
+
+div#nav-1 {
+background-image: url(bilder/hintergrund-nav-1.jpg);
+}
+
+div#nav-2 {
+background-image: url(bilder/hintergrund-nav-2.jpg);
+}
+
+div#nav-3 {
+background-image: url(bilder/hintergrund-nav-3.jpg);
+}
+
+div#nav-3 ul {
+margin-bottom: 0;
+}
+
+div#inhalt {
+float: left;
+width: 743px;
+}
+
+div#inhalt div {
+float: left;
+height: 212px;
+width: 223px;
+}
+
+div#inhalt img {
+margin: 5px 34px 0;
+}
+
+div#komplettangebote {
+background: url(bilder/hintergrund-komplettangebote.jpg);
+}
+
+div#sonderangebote {
+background: url(bilder/hintergrund-sonderangebote.jpg);
+margin: 0 37px 30px;
+}
+
+div#newsletter {
+background: url(bilder/hintergrund-newsletter.jpg);
+}
+
+div#newsletter p {
+margin: 5px 7px 10px;
+}
+
+div#shop-navigator {
+background: url(bilder/hintergrund-shop-navigator.gif);
+height: 162px !important;
+width: 743px !important;
+}
+
+div#shop-navigator div {
+height: auto;
+padding: 0 7px;
+width: 123px; /* nur IE 5.x */
+width/**/:/**/ 109px;
+}
+
+a {
+color: #C40F0F;
+}
+
+a img {
+border: 0;
+}

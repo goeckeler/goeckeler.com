@@ -1,0 +1,21 @@
+BODY	{ background: #cccccc; 
+	  font-family: sans-serif;
+	  color: black; }
+
+A:link { color: #666699 } 
+A:visited { color: #333399 }
+A:active { color: #660000 }
+
+H1	{ text-align: center; background: #cccccc; 
+	  color: #333366; }
+
+H3	{ text-align: center; background: #cccccc; 
+	  color: #663333; font-size: 18; font-weight: bold; }
+
+H4	{ margin-left: 150; background: #cccccc; 
+	  color: #663333; font-size: 12; font-weight: bold; }
+
+P.z { text-align: center; }
+
+<!-- named... -->
+
