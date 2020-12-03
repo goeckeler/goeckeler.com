@@ -5,7 +5,7 @@ defaultContentLanguage = "en"
 title = "goeckeler.com"
 author = "Thorsten Göckeler"
 
-copyright = "Copyright (c) 2006-2017, Thorsten G&ouml;ckeler. All rights reserved."
+copyright = "Copyright (c) 2006-2020, Thorsten G&ouml;ckeler. All rights reserved."
 
 # canonifyurls = true
 pluralizeListTitles = false
